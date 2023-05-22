@@ -7,18 +7,17 @@
     <title>Pessoas Cadastradas</title>
 </head>
 <body>
+    <h3 id="pessoas">
     <% pessoas.forEach((pessoa) => { %>
-        <%= pessoa.nome %>
-    <% }) %>
-    <% pessoas.forEach((pessoa) => { %>
-        <%= pessoa.sobrenome %>
-    <% }) %>
-    <% pessoas.forEach((pessoa) => { %>
-        <%= pessoa.idade %>
-    <% }) %>
-    <% pessoas.forEach((pessoa) => { %>
-        <%= pessoa.altura %>
-    <% }) %>
-    <h2 class="button" onclick="location = '/pessoas/criar'">Voltar</h2>
+        <br/><h2 class="button"><a href="/pessoas/delete?id=<%= pessoa.id %>">Deletar</h2></a>
+        <%= pessoa.id %> <br/>
+        <%= pessoa.nome %> <br/>
+        <%= pessoa.sobrenome %> <br/>
+        <%= pessoa.idade %> <br/>
+        <%= pessoa.altura %> <br/>
+    <% }) %><br/>
+    </h3>
+
+    <h2 class="" class="button" onclick="location = '/pessoas/criar'">Voltar</h2>
 </body>
 </html>

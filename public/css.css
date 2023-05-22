@@ -21,6 +21,7 @@ input{
     margin-bottom: 2%;
     margin: 1px solid black;
     border-radius: 5px;
+    box-shadow: 4px 4px 0px 0px;
 }
 
 #button{
@@ -31,4 +32,8 @@ input{
     cursor: pointer;
     border: 2px solid black;
     border-radius: 10px;
+}
+
+h2{
+    margin-top: 15%;
 }
