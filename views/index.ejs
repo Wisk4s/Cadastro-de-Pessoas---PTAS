@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css.css"/>
     <title>Pessoas Cadastradas</title>
 </head>
 <body>
-    <h3 id="pessoas">
     <% pessoas.forEach((pessoa) => { %>
-        <br/><h2 class="button"><a href="/pessoas/delete?id=<%= pessoa.id %>">Deletar</h2></a>
+        <br/>
+        <div class="pessoas">
         <%= pessoa.id %> <br/>
         <%= pessoa.nome %> <br/>
         <%= pessoa.sobrenome %> <br/>
         <%= pessoa.idade %> <br/>
-        <%= pessoa.altura %> <br/>
-    <% }) %><br/>
-    </h3>
+        <%= pessoa.altura %><br/>
+        <p class="deletar"><a href="/pessoas/delete?id=<%= pessoa.id %>">Deletar</p></a> 
+       </div>
+    <% }) %></div><br/>
 
-    <h2 class="" class="button" onclick="location = '/pessoas/criar'">Voltar</h2>
+    <h2 id="voltar" class="button" onclick="location = '/pessoas/criar'">Voltar</h2>
 </body>
 </html>

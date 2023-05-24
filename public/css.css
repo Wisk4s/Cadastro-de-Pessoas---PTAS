@@ -18,13 +18,14 @@ form{
 
 input{
     width: 100%;
+    padding: 5px;
     margin-bottom: 2%;
     margin: 1px solid black;
     border-radius: 5px;
     box-shadow: 4px 4px 0px 0px;
 }
 
-#button{
+.button{
     width: 50%;
     margin-left: 25%;
     padding: 5px;
@@ -34,6 +35,44 @@ input{
     border-radius: 10px;
 }
 
-h2{
+.deletar{
+    margin-top: 90px;
+    margin-right: 20px;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 5px;
+    box-shadow: 4px 4px 0px 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.pessoas{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    width: 10%;
+    margin-left: 42.5%;
+    border-radius: 10%;
+    box-shadow: 4px 4px 0px 0px;
+    padding: 20px; 
+    font-weight: bold;
+}
+
+.cadastre{
     margin-top: 15%;
+}
+
+#voltar{
+    width: 4.2%;
+    margin-right: 70px;
+    padding: 5px;
+    background-color: white;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 0px;
+    margin-left: 45.3%;
 }
